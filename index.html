@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Phòng</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <header>
+        
+        <!-- <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Tìm kiếm phòng..." onkeyup="searchRooms()">
+        </div> -->
+        <div class="header-container">
+            <div class="overlay">
+                <div class="header-top">
+                    <div class="header-links">
+                            <a href="https://www.facebook.com/nguyen.minh.tri.651727">
+                                <i class="fa-brands fa-facebook-f fa-2xl" style="color: #222020;"></i> facebook 
+                            </a>
+                            <a href="https://www.instagram.com/nmtri3003/">
+                                <i class="fa-brands fa-instagram fa-2xl" style="color: #222020;"></i> instagram 
+                            </a>
+                    </div>
+                    <div class="header-call">
+                        <i class="fa-solid fa-phone" style="color: #272022;"></i>Contact 0703104851 Zalo (Minh Trí)
+                    </div>
+                    <div class="header-options">
+                        <a href="#">🔔 hỗ trợ tìm phòng</a>
+                    
+                    </div>
+                </div>
+                <div class="header-main">
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Tìm kiếm phòng..." onkeyup="searchRooms()">
+                        <button onclick="searchRooms()">🔍</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="room-container" id="room-container">
+            <!-- Dữ liệu phòng sẽ được thêm vào đây -->
+        </div>
+        <div class="room-container">
+            <div class="room-card">
+                <img src="/file_image/Hungluat_Hcv/z6196488569463_85a28ae721b834fbd1c7c0035780be39.jpg" alt="Phòng 1" onclick="goToDetail('inf.html')">
+                <h3>Phòng Duplex Bancol</h3>
+                <p1>Vị trí: Kênh Tên Hóa - Âu Cơ</p1>
+                <p>6,500,000 VNĐ</p>
+                <p>đã lock</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/Ac_TanHuong/bancol/main.jpg" 
+                 alt="Phòng 1" 
+                 onclick="goToDetail('All_room/room2.html')" 
+                 style="cursor: pointer;">
+                <h3>Phòng Duplex Bancol</h3>
+                <p1>Vị trí: Tân Hương</p1>
+                <p>6,250,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/h2_29ds8Tanhuong/main.jpg" alt="Phòng 1" onclick="goToDetail('room3.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Tân Hương</p1>
+                <p>4,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/355kenhtanhoa/main.jpg" alt="Phòng 2" onclick="goToDetail('room4.html')">
+                <h3>Phòng Duplex Bancol</h3>
+                <p1>Vị trí: Kênh Tân Hóa</p1>
+                <p>5,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/HT_Chihien_vohoanh/main.jpg" alt="Phòng 1" onclick="goToDetail('room5.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Võ Hoành</p1>
+                <p>4,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/HT_Chihien_Levanphan/main.jpg" alt="Phòng 2" onclick="goToDetail('room6.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Lê Văn Phan</p1>
+                <p>4,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/115LTT/Bancol/main.jpg" alt="Phòng 1" onclick="goToDetail('room7.html')">
+                <h3>Phòng Duplex Bancol</h3>
+                <p1>Vị trí: Lê Trọng Tấn</p1>
+                <p>4,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/115LTT/Thuong/main.jpg" alt="Phòng 2" onclick="goToDetail('room8.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Lê Trọng Tấn</p1>
+                <p>3,200,000 -> 3,500,000 VNĐ </p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/578LTT/bancol/main.jpg" alt="Phòng 1" onclick="goToDetail('room9.html')">
+                <h3>Phòng Duplex Bancol</h3>
+                <p1>Vị trí: Lê Trọng Tấn</p1>
+                <p>5,200,000 VNĐ</p>
+                <p>Giảm còn 4,200,000 VNĐ 2 tháng đầu</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/578LTT/1pn-pb/main.jpg" alt="Phòng 1" onclick="goToDetail('room5.html')">
+                <h3>1 Phòng Ngủ Tách Bếp</h3>
+                <p1>Vị trí: Lê Trọng Tấn</p1>
+                <p>5,000,000 VNĐ</p>
+                <p>Giảm còn 4,000,000 VNĐ 2 tháng đầu</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/41DTL/main.jpg" alt="Phòng 2" onclick="goToDetail('room6.html')">
+                <h3>Phòng Studio</h3>
+                <p1>Vị trí: Đỗ Thừa Luông</p1>
+                <p>4,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/115LTT/Bancol/main.jpg" alt="Phòng 1" onclick="goToDetail('room7.html')">
+                <h3>Phòng Duplex Bancol</h3>
+                <p1>Vị trí: Lê Trọng Tấn</p1>
+                <p>4,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/Lacasa/242HNT/main.jpg" alt="Phòng 2" onclick="goToDetail('room8.html')">
+                <h3>Phòng Studio</h3>
+                <p1>Vị trí: Thoại Ngọc Hầu</p1>
+                <p>6,700,000 VNĐ</p>
+                <p>FREE 1 THÁNG TIỀN PHÒNG</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/43DTL/main.jpg" alt="Phòng 1" onclick="goToDetail('room9.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Đỗ Thừa Luông</p1>
+                <p>4,500,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/21VL/bancol/main.jpg" alt="Phòng 1" onclick="goToDetail('room10.html')">
+                <h3>Phòng Duplex Bancol</h3>
+                <p1>Vị trí: Vườn Lài</p1>
+                <p>5,000,000 VNĐ</p>
+                <p>Giảm còn 4,500,000 hd 6th</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/21VL/thuong/main.jpg" alt="Phòng 1" onclick="goToDetail('room11.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Vườn Lài</p1>
+                <p>4,400,000 VNĐ</p>
+                <p>Giảm còn 3,900,000 hd 6th</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/77TKTQ/cuasotroi/main.jpg" alt="Phòng 1" onclick="goToDetail('room12.html')">
+                <h3>Phòng Studio</h3>
+                <p1>Vị trí: Tân Kỳ Tân Quý</p1>
+                <p>4,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/Lacasa/34NguyenVanyen/main.jpg" alt="Phòng 1" onclick="goToDetail('room13.html')">
+                <h3>Phòng Studio Bancol</h3>
+                <p1>Vị trí: Nguyễn Văn Yến</p1>
+                <p>4,800,000 VNĐ</p>
+                <p>FREE 1 THÁNG TIỀN PHÒNG</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/Apartment/880auco/Thuong/main.jpg" alt="Phòng 1" onclick="goToDetail('room14.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Âu Cơ</p1>
+                <p>5,200,000 VNĐ</p>
+                <p>Giảm còn 5.000.000 hd 12th</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/Apartment/880auco/Cuasotroi/main.jpg" alt="Phòng 1" onclick="goToDetail('room15.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Âu Cơ</p1>
+                <p>6,000,000 VNĐ</p>
+                <p>Giảm còn 5.800.000 hd 12th</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/Apartment/TNH/main.jpg" alt="Phòng 1" onclick="goToDetail('room16.html')">
+                <h3>Căn Hộ 1PN Tách bếp Bancol</h3>
+                <p1>Vị trí: Thoại Ngọc Hầu</p1>
+                <p>7,500,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/3_18HienVuong/Bancol/main.jpg" alt="Phòng 1" onclick="goToDetail('room17.html')">
+                <h3>Phòng Studio BanCol</h3>
+                <p1>Vị trí: Nguyễn Sơn</p1>
+                <p>5,400,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/3_18HienVuong/Thuong/main.jpg" alt="Phòng 1" onclick="goToDetail('room18.html')">
+                <h3>Phòng Studio Giếng Trời</h3>
+                <p1>Vị trí: Nguyễn Sơn</p1>
+                <p>5,400,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/103 Lê Cao Lãnh/main.jpg" alt="Phòng 1" onclick="goToDetail('room19.html')">
+                <h3>Phòng Studio View kính</h3>
+                <p1>Vị trí: Lê Cão Lãnh</p1>
+                <p>5,300,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/253ThachLam/main.jpg" alt="Phòng 1" onclick="goToDetail('room20.html')">
+                <h3>Phòng Studio BanCol</h3>
+                <p1>Vị trí: Thạch Lam</p1>
+                <p>5,500,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/24AKhuongviet/Bancol/main.jpg" alt="Phòng 1" onclick="goToDetail('room21.html')">
+                <h3>Phòng Duplex BanCol</h3>
+                <p1>Vị trí: Khuông Việt</p1>
+                <p>5,800,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/Peace/9TanThanh/main.jpg" alt="Phòng 1" onclick="goToDetail('room22.html')">
+                <h3>Phòng Studio</h3>
+                <p1>Vị trí: Tân Thành</p1>
+                <p>4,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/Peace/53DlTH/main.jpg" alt="Phòng 1" onclick="goToDetail('room23.html')">
+                <h3>Phòng Studio</h3>
+                <p1>Vị trí: Lê Thúc Hoạch</p1>
+                <p>6,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/355kenhtanhoa/thuong/main.jpg" alt="Phòng 1" onclick="goToDetail('room24.html')">
+                <h3>Phòng Studio</h3>
+                <p1>Vị trí: Kênh Tân Hóa</p1>
+                <p>3,300,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/145LeLu/LBB/2/main.jpg" alt="Phòng 1" onclick="goToDetail('room25.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Lũy Bán Bích</p1>
+                <p>4,500,000 VNĐ</p>
+                <p>Giảm còn 3,700,000 hd 6th</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/145LeLu/LBB/1/main.jpg" alt="Phòng 1" onclick="goToDetail('room26.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Lũy Bán Bích</p1>
+                <p>4,500,000 VNĐ</p>
+                <p>Giảm còn 3,700,000 hd 6th</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/145LeLu/58taythanh/main.jpg" alt="Phòng 1" onclick="goToDetail('room27.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Đường D9</p1>
+                <p>4,000,000 VNĐ</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/36DB/đường b/main.jpg" alt="Phòng 1" onclick="goToDetail('room28.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Đường B</p1>
+                <p>4,500,000 VNĐ</p>
+                <p>Giảm còn 4,200,000 hd 6th</p>
+                <p>Giảm còn 4,300,000 hd 12th</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/36DB/25hxh/bancol/name.jpg" alt="Phòng 1" onclick="goToDetail('room29.html')">
+                <h3>Phòng Duplex Bancol</h3>
+                <p1>Vị trí: Hoàng Xuân Hoành</p1>
+                <p>4,700,000 VNĐ</p>
+                <p>Giảm còn 4,400,000 hd 6th</p>
+                <p>Giảm còn 4,500,000 hd 12th</p>
+            </div>
+            <div class="room-card">
+                <img src="/file_image/36DB//25hxh/thuong/main.jpg" alt="Phòng 1" onclick="goToDetail('room30.html')">
+                <h3>Phòng Duplex</h3>
+                <p1>Vị trí: Hoàng Xuân Hoành</p1>
+                <p>4,300,000 VNĐ</p>
+                <p>Giảm còn 4,000,000 hd 6th</p>
+                <p>Giảm còn 4,100,000 hd 12th</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p style="color: #222020;">&copy; 2024 BLUE HOUSE</p>
+        <p style="color: #222020;">&copy; Chuyên phân phối dự án BDS cho thuê.</p>
+        <p style="color: #222020;">&copy; Kết nối nâng tầm giá trị</p>
+    </footer>
+    <script src="script.js"></script>   
+    <script>
+        function goToDetail(url) {
+            window.location.href = url;
+        }
+        // Tìm kiếm phòng
+        function searchRooms() {
+            const input = document.getElementById('search-input').value.toLowerCase();
+            const cards = document.querySelectorAll('.room-card');
+
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                const description = card.querySelector('p1').textContent.toLowerCase();
+                
+                if (title.includes(input) || description.includes(input)) {
+                    card.style.display = 'block'; // Hiển thị nếu khớp
+                } else {
+                    card.style.display = 'none'; // Ẩn nếu không khớp
+                }
+            });
+        }
+    </script>
+</body>
+</html>

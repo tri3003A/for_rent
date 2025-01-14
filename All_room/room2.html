@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Căn Duplex</title>
+    <link rel="stylesheet" href="room.css">
+</head>
+<body>
+    <!-- Phần Giới Thiệu -->
+    <section class="introduction">
+        <h1>Căn Duplex Tân Hương</h1>
+        <p>
+            Căn duplex nằm ngay mặt tiền Tân Hương, đầy đủ nội thất hiện đại. Nhà xe rộng rãi, di chuyển thuận tiện bằng thang máy. 
+            Cửa ra vào sử dụng thẻ từ đảm bảo an ninh tuyệt đối.
+        </p>
+    </section>
+
+    <!-- Phần Ảnh Chi Tiết -->
+    <section class="image-gallery">
+        <h2>Hình Ảnh Chi Tiết</h2>
+        <div class="gallery">
+            <img src="/file_image/Ac_TanHuong/bancol/main.jpg" alt="Ảnh 1" onclick="toggleFullScreen(this)">
+            <img src="/file_image/Ac_TanHuong/bancol/z6193525040179_821d3c7fb2a51d2b3fba24e7fdc130c0.jpg" alt="Ảnh 2" onclick="toggleFullScreen(this)">
+            <img src="/file_image/Ac_TanHuong/bancol/z6193525051119_a51af822f95631734fd9ed68d92eb871.jpg" alt="Ảnh 3" onclick="toggleFullScreen(this)">
+            <img src="/file_image/Ac_TanHuong/bancol/z6193527184324_23076693fe2c3674d31868fe5b3ed76a.jpg" alt="Ảnh 4" onclick="toggleFullScreen(this)">
+            <img src="/file_image/Ac_TanHuong/bancol/z6193525040179_821d3c7fb2a51d2b3fba24e7fdc130c0.jpg" alt="Ảnh 2" onclick="toggleFullScreen(this)">
+            <img src="/file_image/Ac_TanHuong/bancol/z6193525051119_a51af822f95631734fd9ed68d92eb871.jpg" alt="Ảnh 3" onclick="toggleFullScreen(this)">
+            <img src="/file_image/Ac_TanHuong/bancol/z6193527184324_23076693fe2c3674d31868fe5b3ed76a.jpg" alt="Ảnh 4" onclick="toggleFullScreen(this)">
+        </div>
+    </section>
+
+    <!-- Phần Bảng Giá Dịch Vụ -->
+    <section class="service-pricing">
+        <h2>Bảng Giá Dịch Vụ</h2>
+        <table>
+            <tr>
+                <th>Dịch Vụ</th>
+                <th>Giá (VNĐ)</th>
+            </tr>
+            <tr>
+                <td>Điện</td>
+                <td>3,800 VNĐ/kWh</td>
+            </tr>
+            <tr>
+                <td>Nước</td>
+                <td>100,000 VNĐ/người</td>
+            </tr>
+            <tr>
+                <td>Phí Dịch Vụ</td>
+                <td>200,000 VNĐ/phòng</td>
+            </tr>
+            <tr>
+                <td>Phí Giữ Xe</td>
+                <td>120,000 VNĐ/xe</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Nút Quay Lại Trang Đầu -->
+    <section class="back-button">
+        <button onclick="goToHome()">⬅️ Quay Lại Trang Đầu</button>
+    </section>
+
+    <!-- Overlay Toàn Màn Hình -->
+    <div id="fullscreen-overlay" onclick="toggleFullScreen()">
+        <img id="fullscreen-image" src="" alt="Ảnh Toàn Màn Hình">
+    </div>
+
+    <script>
+        // Điều hướng trang chủ
+        function goToHome() {
+            window.location.href = "/index.html";
+        }
+
+        // Hiện ảnh toàn màn hình
+        function toggleFullScreen(img) {
+            const overlay = document.getElementById('fullscreen-overlay');
+            const fullscreenImg = document.getElementById('fullscreen-image');
+
+            if (!overlay.classList.contains('active')) {
+                // Hiện ảnh toàn màn hình
+                fullscreenImg.src = img.src;
+                overlay.classList.add('active');
+            } else {
+                // Thoát khỏi chế độ toàn màn hình
+                overlay.classList.remove('active');
+                fullscreenImg.src = '';
+            }
+        }
+    </script>
+</body>
+</html>

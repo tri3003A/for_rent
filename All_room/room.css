@@ -1,0 +1,168 @@
+/* Thiết lập cơ bản */
+body {
+    font-family: "Sour Gummy", serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:;
+}
+
+/* Phần Giới Thiệu */
+.introduction {
+    background:#C6E2FF;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.introduction h1 {
+    font-size: 40px;
+    color: red;
+}
+
+.introduction p {
+    font-size: 30px;
+    margin-top: 10px;
+    color:black;
+}
+
+/* Phần Ảnh Chi Tiết */
+.image-gallery {
+    text-align: center;
+    margin: 20px;
+    background:#F5F5F5;
+}
+
+.image-gallery h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Phần Bảng Giá Dịch Vụ */
+.service-pricing {
+    text-align: center;
+    margin: 30px;
+    background:#F5F5F5;
+}
+
+.service-pricing h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Nút Quay Lại Trang Đầu */
+.back-button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.back-button button {
+    background: #3498db;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.back-button button:hover {
+    background: #2980b9;
+}
+
+/* Overlay Toàn Màn Hình */
+#fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#fullscreen-overlay.active {
+    display: flex;
+}
+
+#fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+#fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+    cursor: grab;
+}
+
+#fullscreen-overlay.active {
+    display: flex;
+}
+
+#fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    user-select: none;
+    cursor: grab;
+}
+
+#fullscreen-image:active {
+    cursor: grabbing;
+}
