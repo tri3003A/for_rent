@@ -14,7 +14,7 @@ body {
 
 /* Header với ảnh nền */
 header {
-    background: url('/file_image/avt/avt.jpg') no-repeat center center/cover;
+    background: url('file_image/avt/avt.jpg') no-repeat center center/cover;
     height: 650px; /* Chiều cao header, điều chỉnh theo ý muốn */
     display: flex;
     justify-content: center;
